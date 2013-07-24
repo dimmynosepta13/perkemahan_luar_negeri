@@ -402,7 +402,7 @@ unsigned int LoadTextureFromBmpFile(char *filename);
 void awan(void){
     glPushMatrix();
     glColor3ub(153, 223, 255);
-    glutSolidSphere(10, 50, 50);
+    glutSolidSphere(10, 50, 50);//membuat bentuk bola padat
     glPopMatrix();
     glPushMatrix();
     glTranslatef(10,0,1);
