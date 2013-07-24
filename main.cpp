@@ -398,7 +398,7 @@ void drawSceneTanah(Terrain *terrain, GLfloat r, GLfloat g, GLfloat b) {
 
 unsigned int LoadTextureFromBmpFile(char *filename);
 
-//awan
+//awan_
 void awan(void){
     glPushMatrix();
     glColor3ub(153, 223, 255);
