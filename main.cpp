@@ -1,4 +1,3 @@
-
 #include <cstdlib>
 #include <stdio.h>
 #include <stdlib.h>
@@ -76,14 +75,11 @@ int GambarLoad(char *filename, Gambar *gambar) {
 		printf("Error reading width from %s.\n", filename);
 		return 0;
 	}
-	//printf("Width of %s: %lu\n", filename, gambar->sizeX);
-	// membaca nilai height
+
 	if ((i = fread(&gambar->sizeY, 4, 1, file)) != 1) {
 		printf("Error reading height from %s.\n", filename);
 		return 0;
 	}
-	//printf("Height of %s: %lu\n", filename, gambar->sizeY);
-	//menghitung ukuran gambar(asumsi 24 bits or 3 bytes per pixel).
 
 	size = gambar->sizeX * gambar->sizeY * 3;
 	// read the planes
@@ -332,8 +328,6 @@ public:
 
 
 
-//Loads a terrain from a heightmap.  The heights of the terrain range from
-//-height / 2 to height / 2.
 //load terain di procedure inisialisasi
 Terrain* loadTerrain(const char* filename, float height) {
 	Image* image = loadBMP(filename);
